@@ -16,8 +16,8 @@ const Index = () => {
             </Box>
             <Input placeholder="Username" mb={3} />
             <Input placeholder="Password" type="password" mb={3} />
-            <Button leftIcon={<FaLock />} colorScheme="green" width="full" onClick={() => alert("Login attempt")}>
-              Login
+            <Button leftIcon={<FaLock />} colorScheme="green" width="full" onClick={() => alert("Logging in...")}>
+              Logging in...
             </Button>
           </VStack>
 
@@ -62,7 +62,7 @@ const Index = () => {
                 mr={2}
                 onKeyPress={(event) => {
                   if (event.key === "Enter") {
-                    alert("Message sent!");
+                    alert("Sending message...");
                   }
                 }}
               />
