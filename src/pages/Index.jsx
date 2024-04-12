@@ -16,7 +16,7 @@ const Index = () => {
             </Box>
             <Input placeholder="Username" mb={3} />
             <Input placeholder="Password" type="password" mb={3} />
-            <Button leftIcon={<FaLock />} colorScheme="blue" width="full">
+            <Button leftIcon={<FaLock />} colorScheme="green" width="full">
               Login
             </Button>
           </VStack>
