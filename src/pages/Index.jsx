@@ -11,7 +11,7 @@ const Index = () => {
             <Box textAlign="center" py={5}>
               <FaUser size="3em" />
               <Text fontSize="xl" fontWeight="bold">
-                User Login
+                Secure Login
               </Text>
             </Box>
             <Input placeholder="Username" mb={3} />
