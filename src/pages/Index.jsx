@@ -16,7 +16,7 @@ const Index = () => {
             </Box>
             <Input placeholder="Username" mb={3} />
             <Input placeholder="Password" type="password" mb={3} />
-            <Button leftIcon={<FaLock />} colorScheme="green" width="full">
+            <Button leftIcon={<FaLock />} colorScheme="green" width="full" onClick={() => alert("Login attempt")}>
               Login
             </Button>
           </VStack>
@@ -57,7 +57,15 @@ const Index = () => {
               {/* More messages */}
             </Flex>
             <Flex width="full">
-              <Input placeholder="Type a message..." mr={2} />
+              <Input
+                placeholder="Type a message..."
+                mr={2}
+                onKeyPress={(event) => {
+                  if (event.key === "Enter") {
+                    alert("Message sent!");
+                  }
+                }}
+              />
               <Button colorScheme="blue" px={5}>
                 <FaPaperPlane />
               </Button>
